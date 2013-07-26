@@ -1,0 +1,117 @@
+/* =============================================================================
+   Contact
+   ========================================================================== */
+	#contact{
+		font-weight: 100;
+		width: 100%;
+		text-align: center;
+		border-top: 1px solid #eee;
+	}
+
+	/* ==============================
+	   Contact > Header
+	   ============================== */
+		#contact h1{
+			font: 300 21px/36px @sans;
+			text-align: center;
+		}
+
+	/* ==============================
+	   Contact > Social
+	   ============================== */
+		.social-s {
+			position: relative;
+			width: 100%;
+			overflow: auto;
+			text-align: center;
+			color: #333;
+			margin: 12px auto;
+		}
+			.social-s ul{
+				width: 100%;
+				list-style: none;
+				padding: 0 0 36px 0;
+				margin: 0;
+			}
+				.social-s ul li {
+					width: 100%;
+					display: block;
+					float: left;
+					padding-bottom: 15px;
+				}
+			.social-s p,
+			.social-s a{
+				font: 300 15px/24px @sans;
+			}
+		.social-s .link{
+			display: block;
+		}
+			a.social-h{
+				display: inline-block;
+				color: #f03;
+				font: 500 9px @sans;
+				letter-spacing: 0.125em;
+				padding-bottom: 6px;
+				margin-bottom: 6px;
+				border-bottom: 1px solid @light;
+				text-transform: uppercase;
+			}
+
+		/* ------------------------------
+		   Contact > Social > Colors
+		   ------------------------------ */
+			#twitter .social-h{ color: @twitter; }
+				#twitter .social-h:hover{ border-color: @twitter; }
+				
+			#flipboard .social-h{ color: @flipboard; }
+				#flipboard .social-h:hover{ border-color: @flipboard; }
+				
+			#facebook .social-h{ color: @facebook; }
+				#facebook .social-h:hover{ border-color: @facebook; }
+				
+			#linkedin .social-h{ color: @linkedin; }
+				#linkedin .social-h:hover{ border-color: @linkedin; }
+				
+			#github .social-h{ color: @github; }
+				#github .social-h:hover{ border-color: @github; }
+				
+			#gmail .social-h{ color: @gmail; }
+				#gmail .social-h:hover{ border-color: @gmail; }
+
+		/* ------------------------------
+		   Contact > Social > Twitter
+		   ------------------------------ */
+			#contact .twitterStatus a{
+				font-weight: 700;
+				color: #333;
+			}
+				#contact .twitterStatus a:hover{ color: @twitter; }
+
+		/* ------------------------------
+		   Contact > Social > Dots
+		   ------------------------------ */
+			.social-s .dots {
+				position: absolute;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				margin: 0;
+				padding: 0;
+				line-height: 0;
+			}
+				.social-s .dots li {
+					display: inline-block;
+					width: 6px;
+					height: 6px;
+					margin: 0 3px;
+					text-indent: -999em;
+					border: 1px solid @red;
+					border-radius: 6px;
+					cursor: pointer;
+					opacity: .3;
+					.transition;
+				}
+					.social-s .dots li.active {
+						background: @red;
+						opacity: 1;
+					}

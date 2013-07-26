@@ -1,0 +1,108 @@
+/* ============================================================
+   Header
+   ============================================================ */
+	#header{
+		border-top: 3px solid @gray;
+	}
+
+/* ============================================================
+   Logo
+   ============================================================ */
+	.logo{
+		float: left;
+		padding: 15px 0 15px 50%;
+		margin-left: -15px;
+	}
+		.logo img{
+			max-width: 30px;
+		}
+	@media screen and (min-width: @3col_m) {
+		.logo{
+			padding: 30px 0;
+			margin: 0;
+		}
+	}
+
+/* ============================================================
+   Navigation
+   ============================================================ */
+	#nav,
+	#nav * {
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	#nav{
+		width: 100%;
+		float: right;
+	}
+	#nav ul {
+		width: 100%;
+		list-style: none;
+		float: right;
+	}
+		#nav li {
+			float: left;
+			width: 100%;
+		}
+		
+	@media screen and (min-width: @3col_m) {
+		#nav{ width: auto; }
+			#nav ul{ width: auto; }
+				#nav li {
+					width: auto;
+					padding: 30px 0 30px 60px;
+				}
+	}
+
+	#nav a {
+		width: 100%;
+		float: left;
+		padding: 12px;
+		background-color: @gray;
+		border-top: 1px solid @light;
+		font: 500 9px/15px @sans;
+		color: #fff;
+		text-align: center;
+		text-decoration: none;
+		text-transform: uppercase;
+		letter-spacing: .125em;
+	}
+		#nav a:hover,
+		#nav a:visited:hover,
+		#nav a:active:hover{
+			color: @blue;
+		}
+
+	@media screen and (min-width: @3col_m) {
+		#nav a {
+			color: @gray;
+			margin: 0;
+			float: left;
+			text-align: right;
+			border-top: 0;
+			background-color: #fff;
+			font-size: 12px;
+			line-height: 29px;
+			padding: 0;
+		}
+	}
+	
+	#nav-toggle{
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		float: right;
+		overflow: hidden;
+	}
+		#nav-toggle:after{
+			float: right;
+			font-family: "FontAwesome";
+			content: "\f0c9";
+			font-size: 20px;
+			color: #333;
+			padding: 0;
+			line-height: 59px;
+		}

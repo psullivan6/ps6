@@ -1,0 +1,296 @@
+@import 'html5reset.css';
+
+@import 'globals.css';
+@import "font-awesome.css";
+@import 'grid.css';
+@import 'work.css';
+@import 'about.css';
+@import 'footer.css';
+@import 'contact.css';
+@import 'ultra-img.css';
+@import 'ads.css';
+
+@charset "UTF-8";
+/* CSS Document */
+
+/*
+ * styles.css
+ *
+ * INCLUDED : grid.css - media query sizes
+ *
+ * General styles for the enitre site.
+ * More specific than globals.css
+ *
+ */
+
+/* Once development is complete these files will be minified */
+
+/*  =============================================================================
+	Style Notes
+	========================================================================== */
+
+	/* font:        font-style          font-variant        font-weight         font-size/line-height   font-family     */
+	
+	/* background:  background-color    background-image    background-repeat   background-attachment   background-position     */
+	
+	/*  
+		*-container
+			*-box
+				*-item
+					actual element
+	*/
+	
+	/*  TRANSITION
+	
+		-webkit-transition: all .3s;
+		-moz-transition: all .3s;
+		-ms-transition: all .3s;
+		-o-transition: all .3s;
+		transition: all .3s;
+		
+		BORDER-RADIUS
+		
+		border-radius: 3px;
+		-webkit-border-radius: 3px;
+		
+	*/
+	
+	
+/*  =============================================================================
+	Under Construction Notice
+	========================================================================== */
+	
+	.construction_warning{
+		display: table;
+		margin: 90px auto 0 auto;
+		background-color: #333;
+		color: #fff;
+		padding: 12px;
+		font-size: 9px;
+	}
+		.construction_warning:hover{
+			cursor: pointer;
+		}
+		
+		.construction_warning p,
+		.construction_warning i{
+			display: inline;
+			padding: 0 6px;
+			vertical-align: middle;
+		}
+		.construction_warning p{
+			display: inline-block;
+			font-weight: 300;
+			text-align: center;
+			letter-spacing: 1px;
+			width: 120px;
+		}
+		.construction_warning i{
+			font-size: 15px;
+		}
+			.construction_warning .icon-warning-sign{
+				color: #FC0;
+			}
+			.construction_warning .icon-remove{
+				color: #C00;
+			}
+			
+	/* [ S3 ] 3 columns */
+	@media only screen and (min-width: 575px) {
+		.construction_warning p{
+			display: inline;
+			width: auto;
+			font-size: 11px;
+		}
+		.construction_warning i{
+			font-size: 24px;
+		}
+	}
+	
+	
+/*  =============================================================================
+	Navigation
+	========================================================================== */
+	.h-wrap{
+		position: fixed;
+		z-index: 1200;
+		top: 0;
+		width: 100%;
+		border-bottom: 1px solid #ccc;
+		border-top: 3px solid #06C;
+	}
+	
+	html.no-touch .h-wrap{
+		background-color: rgba(240, 240, 240, .6);
+	}
+		html.touch .h-wrap,
+		html.no-touch .h-wrap:hover{
+			background-color: rgba(240, 240, 240, .96);
+		}
+		
+	.nav {
+		position: relative;
+		max-width: 900px;
+		margin: 0 auto;
+		font: normal 700 15px/1 'Open Sans Condensed', sans-serif;
+		text-transform: uppercase;
+		text-align: center;
+	}
+		.nav a{
+			display: block;
+			color: #999;
+		}
+		
+	/*  ====   [ Navigation Item ]   ==== (Needs to be shown before [.logo] so that logo styles can override the width */
+	.n-section,
+	.n-item{
+		display: block;
+		width: 100%;
+	}
+	
+	.n-item{
+		margin: 0;
+		padding: 18px 0;
+		border-bottom: 1px dotted #999;
+	}
+	
+	.n-item-last{
+		border-bottom: none;
+	}
+	
+		.n-item a:hover{
+			color: #06C;
+		}
+		
+	/*  ====   [ Logo ]   ====  */
+	.logo{
+		width: 42px;    /*  30px + 6px padding below    */
+		margin: 0 auto;
+	}
+	
+		.logo img{
+			width: 30px;
+		}
+		
+		.logo a{
+			padding: 9px 6px;
+		}
+		
+			.logo a:hover{
+				background-color: #fff;
+			}
+			
+	/*  ====   [ Mini Navigation ]   ====   */
+	.n-mini{
+		position: absolute;
+		top: 9px;
+		right: 18px;
+		display: block;
+		width: 27px;
+		height: 27px;
+		background-color: rgba(0, 0, 0, .3);
+	}
+	
+		.n-mini:hover{
+			cursor: pointer;
+		}
+		
+		.n-mini .n-mini-icon{
+			font-size: 16px;
+			line-height: 27px;
+			color: #fff;
+		}
+		
+	/*  ====   [ Navigation List ]   ====   */
+	.n-list{
+		display: block;
+		background: #333333;
+		box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6) inset;
+	}
+	
+	/* [ S3 ] 3 columns */
+	@media only screen and (min-width: 575px)  {
+		
+		.n-section,
+		.n-item{
+			width: auto;
+			display: inline-block;
+			vertical-align: middle;
+			border-bottom: none;
+		}
+		.n-item{
+			margin: 12px 0;
+			padding: 12px 36px; 
+		}
+		
+		.logo{
+			margin: 0 12px;
+			border-bottom: none;
+		}
+			.logo a{
+				padding: 17px 6px;
+			}
+		
+		.n-mini{
+			display: none;
+		}
+		
+		.n-list{
+			display: inline-block;
+			background: none;
+			box-shadow: none;
+			float: none;
+		}
+		
+	}
+	
+	
+/* =============================================================================
+   Non-Semantic Classes
+   ========================================================================== */
+	/* Custom Selection Styles */
+	::selection {background:#06C;color:#FFF;text-shadow:none;}
+	::-webkit-selection {background:#06C;color:#FFF;text-shadow:none;}
+	::-moz-selection {background:#06C;color:#FFF;text-shadow:none;}
+	
+	/* Input focus styles */
+	input:focus {outline:0;border:1px solid #0091BD;} /* Gets rid of blue glow on field focus, adds border color instead */
+	
+	
+/* =============================================================================
+   WordPress Core CSS Styles
+   ========================================================================== */
+	.alignnone {margin:5px 20px 20px 0;}
+	.aligncenter,div.aligncenter {display:block;margin:5px auto 5px auto;}
+	.alignright {float:right;margin:5px 0 20px 20px;}
+	.alignleft {float:left;margin:5px 20px 20px 0;}
+	.aligncenter {display:block;margin:5px auto 5px auto;}
+	a img.alignright {float:right;margin:5px 0 20px 20px;}
+	a img.alignnone {margin:5px 20px 20px 0;}
+	a img.alignleft {float:left;margin:5px 20px 20px 0;}
+	a img.aligncenter {display:block;margin-left:auto;margin-right:auto;}
+	.wp-caption {background:#FFF;border:1px solid #F0F0F0;max-width:96%;padding:5px 3px 10px;text-align:center;}
+	.wp-caption.alignnone {margin:5px 20px 20px 0;}
+	.wp-caption.alignleft {margin:5px 20px 20px 0;}
+	.wp-caption.alignright {margin:5px 0 20px 20px;}
+	.wp-caption img {border:0 none;height:auto;margin:0;max-width:98.5%;padding:0;width:auto;}
+	.wp-caption p.wp-caption-text {font-size:11px;line-height:17px;margin:0;padding:0 4px 5px;}
+	
+	
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+	@media print {
+		* {background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important;}
+		a,a:visited {text-decoration:underline;}
+		a[href]:after {content:" (" attr(href) ")";}
+		abbr[title]:after {content:" (" attr(title) ")";}
+		.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after {content:"";}
+		pre,blockquote {border:1px solid #999;page-break-inside:avoid;}
+		thead {display:table-header-group;}
+		tr,img {page-break-inside:avoid;}
+		img {max-width:100% !important;}
+		@page {margin:0.5cm;}
+		p,h2,h3 {orphans:3;widows:3;}
+		h2,h3 {page-break-after:avoid;}
+	}

@@ -1,0 +1,306 @@
+/* ========================================================================
+ * Content
+ * ======================================================================== */
+	#work, .single_section{ padding-top: 81px; }
+	
+	article{
+		position: relative;
+		margin-bottom: 30px;
+	}
+	
+	#work-single{
+		margin-top: 90px;
+	}
+	
+	
+/* ========================================================================
+ * Item Header
+ * ======================================================================== */
+	.content header{
+		position: absolute;
+		top: 50%;
+		width: 100%;
+		margin-top: -22px;
+		opacity: 0;
+	}
+	
+		html.no-touch .content:hover header{
+			opacity: 1;
+			color: #fff;
+		}
+	
+	.item-title{
+		padding: 12px 0;
+		font: normal 700 15px/1 'Open Sans Condensed', sans-serif;
+		text-align: center;
+		text-transform: uppercase;
+		color: #fff;
+	}
+	.ad-title{
+		padding: 12px 0 6px 0;
+		font: normal 700 15px/1 'Open Sans Condensed', sans-serif;
+		text-align: center;
+		text-transform: uppercase;
+		color: #06c;
+	}
+	.ad_unit{
+		margin: 0 auto;
+	}
+		.item-title a{ color: #fff; }
+		.single .item-title{ color: #06c; }
+		
+		.single .item-content img{ padding: 12px 0; }
+		
+	p.item_description{
+		margin: 0 auto;
+		font-size: 12px;
+		font-weight: 300;
+		color: #777;
+	}
+	
+	
+/* ========================================================================
+ * Meta Box
+ * ======================================================================== */
+	.meta-container{
+		display: block;
+		position: absolute;
+		top: 30%;
+		left: 0;
+		width: 0;
+		overflow: hidden;
+		margin: 0;
+		padding: 0;
+	}
+	
+		.meta-box{
+			position: relative;
+			width: 100%;
+		}
+		
+	/*  ====    [ Categories ]   ====   */
+	.categories-box{
+		width: 100%;
+		background-color: rgba(0, 102, 204, 0);
+	}
+	
+		.categories-box:hover{
+			cursor: default;
+		}
+		
+	.categories{
+		display: table;
+		margin: 0 auto;
+	}
+	
+		.categories a {
+			display: block;
+			float: left;
+			margin: 6px;
+			padding: 6px 12px;
+			background-color: rgba(255, 255, 255, 0);
+			color: #fff;
+			font-size: 11px;
+			line-height: 1;
+			border-radius: 3px;
+			-webkit-border-radius: 3px;
+		}
+		
+			.categories a:hover {
+				background-color: #fff;
+				color: #06c;
+			}
+			
+	/*  ====    [ No Touch ]   ==== */
+	html.no-touch .content:hover{
+		cursor: pointer;
+	}
+	
+	html.no-touch .content img{
+		opacity: 1;
+		-webkit-transition: all .6s;
+		-moz-transition: all .6s;
+		-ms-transition: all .6s;
+		-o-transition: all .6s;
+		transition: all .6s;
+	}
+	
+	html.no-touch .content .piece{
+		background-color: #fff;
+		overflow: hidden;
+		-webkit-transition: all .6s;
+		-moz-transition: all .6s;
+		-ms-transition: all .6s;
+		-o-transition: all .6s;
+		transition: all .6s;
+	}
+	
+	html.no-touch .content:hover img{ opacity: .06 }
+	html.no-touch .content:hover .piece{ background-color: #E03; }
+	html.no-touch .content:hover .meta-container{ width: 100%; }
+	html.no-touch .content:hover .categories-box{ background-color: rgba(0, 102, 204, 1);}
+	
+		.content:hover .piece{
+			background-color: #E03;
+		}
+	
+		.piece img{
+			display: block;
+			margin: 0 auto;
+		}
+	
+	
+/* ========================================================================
+ * Download Links
+ * ======================================================================== */
+	.dl_bar{
+		margin-top: 12px;
+		text-align: center;
+		color: #333;
+	}
+		}
+		.dl_box,
+		.dl_colon,
+		.dl_Ps{
+			display: block;
+			float: left;
+		}
+		.dl_box{
+			display: block;
+			float: left;
+			padding: 7px 12px;
+			font-size: 15px;
+			line-height: 14px;
+			background-color: #333;
+			color: #fff;
+		}
+		.dl_colon{
+			display: block;
+			float: left;
+			font-size: 16px;
+			font-weight: bolder;
+			color: #333;
+			padding: 6px;
+		}
+		.dl_Ps,
+		.dl_Ai,
+		.dl_Fl,
+		.dl_InD,
+		.dl_Ac{
+			display: block;
+			float: left;
+			width: 17px;
+			height: 15px;
+			padding: 6px;
+			text-indent: -999999em;
+			background-image: url('http://psullivan6.com//i/icons/adobe_icons.png');
+			background-repeat: no-repeat;
+			border-width: 1px;
+			border-style: solid;
+		}
+		.dl_sheet{
+			display: block;
+			float: left;
+			width: 17px;
+			height: 15px;
+			padding: 6px;
+			border-width: 1px;
+			border-style: solid;
+		}
+		.dl_Ai,
+		.dl_Fl,
+		.dl_InD,
+		.dl_Ac,
+		.dl_sheet{
+			margin-left: 6px;
+		}
+		.dl_Ps{
+			border-color: #0075e7;
+			background-color: #0075e7;
+			background-position: 6px 6px;
+		}
+		.dl_Ai{
+			border-color: #ffa200;
+			background-color: #ffa200;
+			background-position: 6px -21px;
+		}
+		.dl_Ac{
+			border-color: #ccc;
+			background-color: #fff;
+			background-position: 6px -102px;
+		}
+		.dl_sheet{
+			font-size: 16px;
+			border-color: #0f9d58;
+			background-color: #0f9d58;
+			color: #fff;
+		}
+			.dl_Ps:hover,
+			.dl_Ai:hover,
+			.dl_Fl:hover,
+			.dl_InD:hover,
+			.dl_sheet:hover{
+				border-color: #333;
+				background-color: #333;
+			}
+			.dl_Ac:hover{
+				background-color: #eee;
+			}
+			
+			
+/* ========================================================================
+ * Media Queries
+ * ======================================================================== */
+	/* [ S3 ] 3 columns */
+	@media only screen and (min-width: 575px)  {
+		
+		.item-title,
+		.ad-title { font-size: 18px; }
+		
+		#work, .single_section{ padding-top: 98px; }
+		
+		article{ margin-bottom: 30px; }
+	}
+	
+	/* [ S ] 4 columns */
+	@media only screen and (min-width: 725px)  {
+		
+		.content header{ margin-top: -21px; }
+		
+		.item-title,
+		.ad-title { font-size: 15px; }
+		
+		.single .item-title { text-align: left; }
+		
+		.content .piece{ max-height: 155px; }
+		
+	}
+	
+	/* [ M ] 6 columns */
+	@media only screen and (min-width: 1065px) {
+		
+		.content header{ margin-top: -22px; }
+		
+		.item-title,
+		.ad-title { font-size: 18px; }
+		
+		.content .piece{ max-height: 240px; }
+		
+	}
+	
+	/* [ L ] 8 columns */
+	@media only screen and (min-width: 1465px) {
+		.content .piece{ max-height: 325px; }
+		.categories a{ margin: 9px; padding: 9px 18px; } 
+	}
+	
+	/* [ XL ] 10 columns */
+	@media only screen and (min-width: 1635px) {
+		.content .piece{ max-height: 240px; }
+	}
+	
+	
+	/* Retina screens */
+	@media only screen and (-webkit-min-device-pixel-ratio: 1.5){
+		/* Style adjustments for high resolution devices */
+	}

@@ -1,0 +1,60 @@
+/* ============================================================
+   Grid
+   ============================================================ */
+	
+	/* media min-width = .grid + 15 (scrollbar) + 60 (30px R & L margin) */
+	@1col:   120px;     @1col_m:  @1col  + 15 + 60;
+	@1-5col: 195px;
+	@2col:   270px;     @2col_m:  @2col  + 15 + 60;
+	@3col:   420px;     @3col_m:  @3col  + 15 + 60;
+	@4col:   570px;     @4col_m:  @4col  + 15 + 60;
+	@5col:   720px;     @5col_m:  @5col  + 15 + 60;
+	@6col:   870px;     @6col_m:  @6col  + 15 + 60;
+	@7col:   1020px;    @7col_m:  @7col  + 15 + 60;
+	@8col:   1170px;    @8col_m:  @8col  + 15 + 60;
+	@9col:   1320px;    @9col_m:  @9col  + 15 + 60;
+	@10col:  1470px;    @10col_m: @10col + 15 + 60;
+	@11col:  1620px;    @11col_m: @11col + 15 + 60;
+	@12col:  1770px;    @12col_m: @12col + 15 + 60;
+
+
+/* ============================================================
+   Colors
+   ============================================================ */
+	@blue  : #0066cc;
+	@green : #009933;
+	@red   : #ff0033;
+	@gray  : #333333;
+	@light : #eeeeee;
+	
+	/* ------------------------------
+	   Social Media
+	   ------------------------------ */
+		@twitter   : #00a0d1;
+		@flipboard : #b31f17;
+		@facebook  : #3b5998;
+		@linkedin  : #0e76a8;
+		@github    : #171515;
+		@gmail     : #db4a39;
+
+/* ============================================================
+   CSS3
+   ============================================================ */
+	/* ------------------------------
+	   Transition
+	   ------------------------------ */
+		.transition (@time: .6s){
+			-webkit-transition: all @time;
+			-moz-transition: all @time;
+			-ms-transition: all @time;
+			-o-transition: all @time;
+			transition: all @time;
+		}
+
+
+/* ============================================================
+   Fonts
+   ============================================================ */
+	@sans   : 'Lato', Arial, sans-serif;
+	@sans-h : 'Open Sans Condensed','Lato', sans-serif;
+	@serif  : Georgia, serif;

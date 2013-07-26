@@ -1,0 +1,61 @@
+/* =============================================================================
+   About
+   ========================================================================== */
+	#about{
+		font-weight: 100;
+		width: 100%;
+		text-align: center;
+		border-bottom: 1px solid @light;
+	}
+
+	/* ==============================
+	   About > Title Slider
+	   ============================== */
+		.titles {
+			position: relative;
+			width: 100%;
+			overflow: auto;
+			text-align: center;
+			color: @gray;
+			margin-top: 6px;
+		}
+			.titles ul{
+				list-style: none;
+				width: 100%;
+				padding: 0;
+				margin: 0;
+			}
+				.titles ul li {
+					display: block;
+					float: left;
+					padding-bottom: 12px;
+				}
+
+		/* ------------------------------
+		   About > Title Slider > Dots
+		   ------------------------------ */
+			.titles .dots {
+				position: absolute;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				margin: 0;
+				padding: 0;
+				line-height: 0;
+			}
+				.titles .dots li {
+					display: inline-block;
+					width: 6px;
+					height: 6px;
+					margin: 0 3px;
+					text-indent: -999em;
+					border: 1px solid @red;
+					border-radius: 6px;
+					cursor: pointer;
+					opacity: .3;
+					.transition;
+				}
+					.titles .dots li.active {
+						background: @red;
+						opacity: 1;
+					}

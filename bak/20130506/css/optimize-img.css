@@ -1,0 +1,40 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*
+ * optimize-img.css
+ *
+ * INCLUDED:
+ * - grid.css : media query sizes
+ *
+ * Use CSS to tell the media query script the screen width
+ *
+ */
+
+	html { font-family: 's2'; }
+	
+	/* IE6 */
+	* html { font-family: 'xl' }
+	
+	/* IE7 */
+	*+html { font-family: 'xl' }
+	
+	/* IE8 */
+	@media \0screen { html { font-family: 'xl' } }
+
+
+	/* font-family Reset: */
+	body {
+		font-family: Arial, Helvetica, sans-serif;
+	}
+
+
+@media only screen and (min-width: 535px)  { html { font-family: 's3'; } }
+
+@media only screen and (min-width: 715px)  { html { font-family: 's'; } }
+
+@media only screen and (min-width: 1075px) { html { font-family: 'm'; } }
+
+@media only screen and (min-width: 1435px) { html { font-family: 'l'; } }
+
+@media only screen and (min-width: 1795px) { html { font-family: 'xl'; } }

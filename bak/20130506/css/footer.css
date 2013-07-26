@@ -1,0 +1,50 @@
+/*  =============================================================================
+	Footer
+	========================================================================== */
+	.footer{
+		background-color: #333;
+	}
+		.footer .g_col{
+			margin: 0;
+		}
+	
+	#underground{
+		padding: 12px;
+	}
+		#underground p{
+			color: #999;
+			padding: 0;
+			margin: 0;
+			font-weight: 300;
+			line-height: 2;
+		}
+		#underground span{
+			display: inline-block;
+		}
+		
+		#underground .dot1{ display: none; }
+		#underground .c_name{ display: block; }
+		
+		
+	.c_name{
+		color: #fff;
+	}
+		.c_name span:first-child{
+			font-weight: bold;
+		}
+		
+	.phone{
+		color: #fff;
+	}
+		.phone:hover{
+			color: #06c;
+		}
+		
+	/* [ S3 ] 3 columns */
+	@media only screen and (min-width: 505px) { #underground .dot1{ display: inline; } #underground .c_name{ display: inline-block; } }
+	
+	/* [ L ] 8 columns */
+	@media only screen and (min-width: 1355px) { .categories a{ margin: 9px; padding: 9px 18px; } }
+	
+	/* [ XL ] 10 columns */
+	@media only screen and (min-width: 1695px) {   }
