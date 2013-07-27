@@ -40,21 +40,24 @@
 							$col_3  = simplexml_load_string(get_the_post_thumbnail(get_the_ID(), '3col'))->attributes()->src;
 							$col_2  = simplexml_load_string(get_the_post_thumbnail(get_the_ID(), 'thumbnail'))->attributes()->src;
 							
-							the_post_thumbnail('3col', array(
-								'class' => 'feature',
-								'data-src-two'          => $col_2,
-								'data-src-two-retina'   => $col_4,
-								'data-src-three'        => $col_3,
-								'data-src-three-retina' => $col_6,
-								'data-src-four'         => $col_4,
-								'data-src-four-retina'  => $col_6,
-								'data-src-six'          => $col_6,
-								'data-src-six-retina'   => $col_12,
-								'data-src-seven'        => $col_7,
-								'data-src-seven-retina' => $col_12,
-								'data-src-eight'        => $col_8,
-								'data-src-eight-retina' => $col_12
-							)); ?>
+							$full_src  = "<img class=\"feature\" src=\"" . $col_3;
+							$full_src .= "\" data-src-two=\""          . $col_2;
+							$full_src .= "\" data-src-two-retina=\""   . $col_4;
+							$full_src .= "\" data-src-three=\""        . $col_3;
+							$full_src .= "\" data-src-three-retina=\"" . $col_6;
+							$full_src .= "\" data-src-four=\""         . $col_4;
+							$full_src .= "\" data-src-four-retina=\""  . $col_6;
+							$full_src .= "\" data-src-six=\""          . $col_6;
+							$full_src .= "\" data-src-six-retina=\""   . $col_12;
+							$full_src .= "\" data-src-seven=\""        . $col_7;
+							$full_src .= "\" data-src-seven-retina=\"" . $col_12;
+							$full_src .= "\" data-src-eight=\""        . $col_8;
+							$full_src .= "\" data-src-eight-retina=\"" . $col_1;
+							$full_src .= "\">";
+							
+							echo $full_src;
+							
+						?>
 						
 					</div> <!-- /.piece -->
 					

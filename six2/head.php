@@ -24,7 +24,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
 
 	<!-- [ STYLES ] -->
-	<link type="text/css" rel="stylesheet" href="http://assets.psullivan6.com/css/ps6.styles.min.css" />
+	<link type="text/css" rel="stylesheet" href="http://assets.psullivan6.com/css/ps6.min.css" />
 
 	<!-- [ Modernizer ] -->
 	<script type="text/javascript" src="http://assets.psullivan6.com/js/modernizr.custom.22904.js"></script>

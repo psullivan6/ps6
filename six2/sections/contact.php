@@ -4,61 +4,73 @@
 	
 	<div class="g_col S3_3 S4_4 M_4 L_5 XL_6">
 		
-		<div id="contact" class="section about">
+		<div id="contact" class="section">
 			
-			<h1>I'm quite social &hellip;</h1>
-			
-			<article>
+			<section>
 				
-				<div class="social-s">
+				<div id="twitter" class="g_1-5">
 					
-					<ul>
+					<a target="_blank" class="social" href="http://twitter.com/psullivan6">
 						
-						<li id="linkedin" class="social">
-							
-							<a target="_blank" class="social-h" href="http://linkedin.com/in/psullivan6">LinkedIn</a>
-							
-							<a class="link" href="http://www.linkedin.com/in/psullivan6" target="_blank">Join my professional network, view my career history, or <b>send a job request</b>.</a>
-							
-						</li>
+						<img class="center" src="http://assets.psullivan6.com/i/social_twitter.svg" alt="Twitter">
 						
-						<li id="github" class="social">
-							
-							<a target="_blank" class="social-h" href="https://github.com/psullivan6">GitHub</a>
-							
-							<a class="link" href="https://github.com/psullivan6" target="_blank">Check out some of the projects I'm working on. <b>Top-Secret projects upon request.</b></a>
-							
-						</li>
-						
-						<li id="gmail" class="social">
-							
-							<a target="_blank" class="social-h" href="mailto:psullivan6@gmail.com">Gmail</a>
-							
-							<a class="link" href="mailto:psullivan6@gmail.com" target="_blank">Shoot me an email.</a>
-							
-						</li>
-						
-						<li id="twitter" class="social">
-							
-							<a target="_blank" class="social-h" href="http://twitter.com/psullivan6" target="_blank">Twitter</a>
-							
-							<p class="twitterFeed transition" id="twitterFeed">#hashtag</p>
-							
-						</li>
-						
-						<li id="facebook" class="social">
-							
-							<a target="_blank" class="social-h" href="http://facebook.com/psullivan6">Facebook</a>
-							
-							<p>To <b>friend me</b> or not to friend me. That is the question.</p>
-							
-						</li>
-						
-					</ul>
+					</a>
 					
-				</div>
+					<p class="social-h center">Twitter</p>
+					
+				</div> <!-- /.g_1-5 -->
 				
-			</article>
+				<div id="facebook" class="g_1-5">
+					
+					<a target="_blank" class="social" href="http://facebook.com/psullivan6">
+						
+						<img class="center" src="http://assets.psullivan6.com/i/social_facebook.svg" alt="Facebook">
+						
+					</a>
+					
+					<p class="social-h center">Facebook</p>
+					
+				</div> <!-- /.g_1-5 -->
+				
+				<div id="github" class="g_1-5">
+					
+					<a target="_blank" class="social" href="https://github.com/psullivan6">
+						
+						<img class="center" src="http://assets.psullivan6.com/i/social_github.svg" alt="GitHub">
+						
+					</a>
+					
+					<p class="social-h center">GitHub</p>
+					
+				</div> <!-- /.g_1-5 -->
+				
+				<div id="gmail" class="g_1-5">
+					
+					<a target="_blank" class="social" href="mailto:psullivan6@gmail.com">
+						
+						<img class="center" src="http://assets.psullivan6.com/i/social_gmail.svg" alt="Gmail">
+						
+					</a>
+					
+					<p class="social-h center">Email</p>
+					
+				</div> <!-- /.g_1-5 -->
+				
+				<div id="linkedin" class="g_1-5">
+					
+					<a target="_blank" class="social" href="http://linkedin.com/in/psullivan6">
+						
+						<img class="center" src="http://assets.psullivan6.com/i/social_linkedin.svg" alt="LinkedIn">
+						
+					</a>
+					
+					<p class="social-h center">LinkedIn</p>
+					
+				</div> <!-- /.g_1-5 -->
+				
+				<div class="cl_l"></div>
+				
+			</section>
 			
 		</div> <!-- /#contact -->
 		
